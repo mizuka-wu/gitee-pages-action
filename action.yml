@@ -22,8 +22,8 @@ inputs:
     default: true
     required: false
 outputs:
-  time: # id of output
-    description: "The time we greeted you"
+  result: # id of output
+    description: "The result of api"
 runs:
   using: "node12"
   main: "index.js"
