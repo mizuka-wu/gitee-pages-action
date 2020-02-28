@@ -1,0 +1,29 @@
+name: "Refresh Gitee Pages"
+description: "Auto Refresh Gitee Pages"
+inputs:
+  repository:
+    description: "The repository, Like 'Mizuka/Mizuka'"
+    required: true
+    default: "World"
+  cookie:
+    description: "Gitee Cookie"
+    required: true
+    default: ""
+  branch:
+    description: "Which branch to build"
+    default: "master"
+    required: false
+  directory:
+    description: "Which directory to build"
+    default: ""
+    required: false
+  https:
+    description: "Use Force Https?"
+    default: true
+    required: false
+outputs:
+  time: # id of output
+    description: "The time we greeted you"
+runs:
+  using: "node12"
+  main: "index.js"
