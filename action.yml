@@ -1,5 +1,6 @@
 name: "Refresh Gitee Pages"
 description: "Auto Refresh Gitee Pages"
+icon: "refresh-ccw"
 inputs:
   repository:
     description: "The repository, Like 'Mizuka/Mizuka'"
