@@ -23,11 +23,21 @@ jobs:
           https: true
 ```
 
+## 获取cookie
+
+| step_1                                                       | step_2                                                       | step_3                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- |
+| 进入gitee pages服务管理页，点击更新                          | 打开devTools，在network中查看rebuild请求的标头               | 复制请求标头中的cookie值                    |
+| Go to the Gitee Pages service management page and click Update | Open devTools and look at the headers for rebuild requests in the network | Copy the cookie value in the request header |
+
+![参考](./static/get-cookie-steps.png)
+
+
 ## 添加 cookie
 
 > How to add Cookie
 
-在`setting`中点击`secrets`，新建`GITEE_COOKIE`
+在`setting`中点击`secrets`，新建`GITEE_COOKIE`，将上面获取到的cookie值存入其中。
 
 > in `setting` Menu, click `secrets` button，add `GITEE_COOKIE`
 
